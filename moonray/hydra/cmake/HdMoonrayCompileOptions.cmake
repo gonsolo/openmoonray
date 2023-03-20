@@ -78,7 +78,8 @@ function(Moonray_ispc_compile_options target)
         PRIVATE
             --opt=force-aligned-memory          # always issue "aligned" vector load and store instructions
             --pic                               # Generate position-independent code.  Ignored for Windows target
-            --werror                            # Treat warnings as errors
+	    #--werror                            # Treat warnings as errors
+	    --ignore-preprocessor-errors
             --wno-perf                          # Don't issue warnings related to performance-related issues
 
             $<$<CONFIG:DEBUG>:

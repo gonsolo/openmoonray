@@ -1,0 +1,4 @@
+CC=clang CXX=clang++ CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/OpenImageIO:/opt:/path/to/NVIDIA-OptiX-SDK-7.6.0-linux64-x86_64 cmake ..
+
+LD_LIBRARY_PATH=/home/gonsolo/src/openmoonray/release/lib  ./bin/moonray -dso_path rdl2dso -in ../testdata/rectangle.rdla -out bla.ex
+
